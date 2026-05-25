@@ -179,3 +179,8 @@ python-dotenv
 sentence-transformers
 scikit-learn
 groq
+
+## Author
+
+- Name: Surya Vikas Indraganti
+- GitHub: https://github.com/suryavikasindraganti
