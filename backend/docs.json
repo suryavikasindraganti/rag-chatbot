@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Reset Password",
+    "content": "Users can reset their password from Settings > Security."
+  },
+  {
+    "title": "Account Deletion",
+    "content": "Users can delete their account from Account Settings."
+  }
+]
