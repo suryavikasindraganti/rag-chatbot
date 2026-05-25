@@ -1,10 +1,34 @@
 [
   {
     "title": "Reset Password",
-    "content": "Users can reset their password from Settings > Security."
+    "content": "Users can reset their password from Settings > Security > Reset Password. They will receive an email with a reset link valid for 24 hours. If the email does not arrive, check the spam folder or contact support."
   },
   {
     "title": "Account Deletion",
-    "content": "Users can delete their account from Account Settings."
+    "content": "Users can permanently delete their account from Account Settings > Danger Zone > Delete Account. This action is irreversible and all data will be removed within 30 days."
+  },
+  {
+    "title": "Billing and Subscriptions",
+    "content": "Users can manage billing and subscription plans under Account Settings > Billing. We accept Visa, Mastercard, and PayPal. Invoices are sent monthly to the registered email address."
+  },
+  {
+    "title": "Two-Factor Authentication",
+    "content": "Two-factor authentication adds extra security. Enable it from Settings > Security > Two-Factor Authentication using an authenticator app like Google Authenticator or via SMS."
+  },
+  {
+    "title": "Data Export",
+    "content": "Users can export their data in JSON or CSV format from Account Settings > Privacy > Export Data. The export may take up to 48 hours and a download link will be sent via email."
+  },
+  {
+    "title": "Contacting Support",
+    "content": "Support is available 24/7 via live chat at support.example.com or by emailing support@example.com. Response time is typically under 2 hours for urgent issues."
+  },
+  {
+    "title": "Changing Email Address",
+    "content": "To change your email address go to Account Settings > Profile > Edit Email. A verification link will be sent to the new address. The change takes effect after clicking the link."
+  },
+  {
+    "title": "Refund Policy",
+    "content": "Refunds are available within 14 days of purchase if the product was not used. Contact support with your order ID. Refunds are processed within 5 to 7 business days."
   }
 ]

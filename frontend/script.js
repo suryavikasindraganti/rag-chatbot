@@ -24,7 +24,7 @@ async function sendMessage() {
 
   userInput.value = "";
   sendBtn.disabled = true;
-  statusBar.textContent = "";
+  if (statusBar) statusBar.textContent = "";
 
   appendMessage("user", message);
   const thinkingEl = appendMessage("thinking", "Thinking...");
@@ -41,7 +41,7 @@ async function sendMessage() {
 
     if (data.reply) {
       appendMessage("bot", data.reply);
-      if (data.retrievedChunks !== undefined) {
+      if (statusBar && data.retrievedChunks !== undefined) {
         statusBar.textContent = `Retrieved ${data.retrievedChunks} chunk(s) from knowledge base.`;
       }
     } else {
@@ -51,16 +51,15 @@ async function sendMessage() {
   } catch (error) {
     thinkingEl.remove();
     appendMessage("bot", "Error connecting to backend. Is the server running?");
+    console.error(error);
   }
 
   sendBtn.disabled = false;
   userInput.focus();
 }
 
-// Send on button click
 sendBtn.addEventListener("click", sendMessage);
 
-// Send on Enter key
 userInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") sendMessage();
 });
